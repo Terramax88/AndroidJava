@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     ArrayList<Note> noteArrayList = new ArrayList<>();
     //git test change1
+    //git change2
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
