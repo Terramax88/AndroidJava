@@ -16,8 +16,6 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     ArrayList<Note> noteArrayList = new ArrayList<>();
-    //git test change1
-    //git change2
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setHasFixedSize(false);
 
         FloatingActionButton btn = binding.floatingActionButton;
+        binding.setAddButtonHandler(new ButtonAddHandler(this));
 
         MyAdapter adapter = new MyAdapter(noteArrayList);
         recyclerView.setAdapter(adapter);
