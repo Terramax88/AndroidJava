@@ -40,4 +40,13 @@ public class Repository {
    public LiveData<List<Note>> getNotes(){
       return noteDAO.allNotes();
    }
+
+   public void select(int id){
+      executorService.execute(new Runnable() {
+         @Override
+         public void run() {
+            noteDAO.select(id);
+         }
+      });
+   }
 }

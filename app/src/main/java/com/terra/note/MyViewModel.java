@@ -13,6 +13,7 @@ public class MyViewModel extends AndroidViewModel {
    private Repository repository;
    private LiveData<List<Note>> notes;
 
+
    public MyViewModel(@NonNull Application application) {
       super(application);
       this.repository = new Repository(application);
@@ -30,4 +31,6 @@ public class MyViewModel extends AndroidViewModel {
       notes = repository.getNotes();
       return notes;
    }
+
+
 }
