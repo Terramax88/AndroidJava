@@ -27,6 +27,8 @@
             android:hint="Add Title"
             android:text="@={note.title}"
             android:minHeight="64dp"
+            android:inputType="text"
+            android:imeOptions="actionDone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -39,6 +41,8 @@
             android:hint="Enter Note"
             android:text="@={note.note}"
             android:minHeight="128dp"
+            android:inputType="text"
+            android:imeOptions="actionDone"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/editTitle" />
